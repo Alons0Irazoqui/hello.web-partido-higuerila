@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partido Higuerillas | Transmision de eventos en vivo</title>
+  <meta name="description" content="Partido Higuerillas ofrece transmision de eventos en vivo. Contacto directo con Aurelio Cruz por Facebook o telefono al 241 112 7553.">
+  <meta name="keywords" content="Partido Higuerillas, transmision de eventos en vivo, eventos en vivo, Aurelio Cruz, streaming de eventos">
+  <meta property="og:title" content="Partido Higuerillas | Transmision de eventos en vivo">
+  <meta property="og:description" content="Marca de transmision de eventos en vivo con contacto directo por Facebook y telefono.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/partido-higuerillas-logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="loader" aria-hidden="true">
+    <div class="loader-emblem">
+      <img src="imagenes/partido-higuerillas-logo.png" alt="">
+      <span></span>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando senal...</span>
+  </div>
+  <script>
+    window.setTimeout(function () {
+      var loader = document.getElementById("loader");
+      if (loader) {
+        loader.classList.add("hidden");
+        document.body.classList.add("loaded");
+      }
+    }, 2400);
+  </script>
+
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Partido Higuerillas - inicio">
+          <img src="imagenes/partido-higuerillas-logo.png" alt="Logo de Partido Higuerillas" class="nav-logo-img">
+          <div class="nav-logo-copy">
+            <span>Partido</span>
+            <span>Higuerillas</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegacion principal">
+          <ul class="nav-links">
+            <li><a href="#why">Elegirnos</a></li>
+            <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#sectores">Galeria</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/522411127553?text=Hola%2C%20quiero%20informacion%20sobre%20transmision%20de%20eventos%20en%20vivo%20con%20Partido%20Higuerillas."
+           class="btn-gold nav-cta" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mob-menu" aria-label="Menu movil">
+      <a href="#why">Elegirnos</a>
+      <a href="#ambientes">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#sectores">Galeria</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/522411127553?text=Hola%2C%20quiero%20informacion%20sobre%20transmision%20de%20eventos%20en%20vivo%20con%20Partido%20Higuerillas."
+         target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge" id="hero-badge">
+            <div class="badge-dot"></div>
+            Transmision de eventos en vivo
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Partido</span></span>
+            <span class="line"><span>Higuerillas</span></span>
+            <span class="line"><span class="accent typewriter" data-text="en vivo."></span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            Presentacion premium para una marca dedicada a la <strong>transmision de eventos en vivo</strong>, con contacto directo por Facebook y telefono.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/522411127553?text=Hola%20Aurelio%2C%20visite%20la%20pagina%20de%20Partido%20Higuerillas%20y%20quiero%20informacion%20sobre%20transmision%20de%20eventos%20en%20vivo."
+               class="btn-gold" target="_blank" rel="noopener noreferrer">
+              Solicitar informacion
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-tower-broadcast"></i>
+              Ver servicio
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Datos de confianza">
+            <div class="trust-item">
+              <i class="fa-solid fa-phone"></i>
+              241 112 7553
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-brands fa-facebook-f"></i>
+              Aurelio Cruz
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              Datos verificados del brief
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <section id="why" aria-labelledby="why-heading">
+      <canvas class="section-particles" data-particles="silver" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por que elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              Una marca con presencia de sello:
+              <em>directa, memorable y lista para verse en vivo.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            La informacion disponible es breve, asi que la pagina se construye con claridad: se comunica el servicio confirmado, los canales reales de contacto y los espacios que quedan pendientes para completar con material del cliente.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-satellite-dish"></i></div>
+            <h3>Enfoque en vivo</h3>
+            <p>La comunicacion se centra en el servicio confirmado: transmision de eventos en vivo.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-medal"></i></div>
+            <h3>Identidad premium</h3>
+            <p>El emblema se usa como protagonista visual, con una paleta negro, plata y dorado.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-comments"></i></div>
+            <h3>Contacto directo</h3>
+            <p>El usuario puede escribir por WhatsApp o ubicar el contacto de Facebook: Aurelio Cruz.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Sin datos inventados</h3>
+            <p>Direcciones, horarios, galerias y paquetes quedan marcados como pendientes hasta confirmacion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Servicios</div>
+            <h2 class="section-title" id="amb-heading">
+              Transmision en vivo<br>
+              <span class="gold">para eventos con presencia</span>
+            </h2>
+            <p class="section-lead">
+              Solo hay un servicio confirmado en el brief. Las tarjetas adicionales funcionan como espacios preparados para completar cuando el cliente entregue detalles, fotos reales o paquetes.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">Servicio confirmado + espacios pendientes</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1400&auto=format&fit=crop"
+              alt="Imagen referencial de evento en vivo con luces y publico">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-video"></i></div>
+              <h3>Transmision en vivo de eventos</h3>
+              <p>Servicio confirmado por el cliente para presentar eventos en tiempo real.</p>
+              <div class="amb-temp">Confirmado en el brief</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d1 pending-card">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop"
+              alt="Imagen referencial de equipo para transmision digital">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-list-check"></i></div>
+              <h3>Detalle de cobertura</h3>
+              <p>Pendiente de confirmar: alcance, duracion, formatos y condiciones del servicio.</p>
+              <div class="amb-temp">Informacion pendiente</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d2 pending-card">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1400&auto=format&fit=crop"
+              alt="Imagen referencial de produccion de evento nocturno">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-images"></i></div>
+              <h3>Fotos reales del servicio</h3>
+              <p>Espacio reservado para reemplazar imagenes referenciales por trabajos reales del cliente.</p>
+              <div class="amb-temp">Asset pendiente</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+        <div class="proceso-header reveal">
+          <div class="label">Como funciona</div>
+          <h2 class="section-title" id="proceso-heading">
+            Tres pasos para <span class="gold">iniciar la conversacion</span>
+          </h2>
+          <p>El flujo esta pensado para convertir visitas en mensajes claros por WhatsApp, sin formularios que se queden cargando.</p>
+        </div>
+
+        <div class="proceso-grid">
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Contacta a Aurelio Cruz</h3>
+            <p>Escribe por WhatsApp o ubica el contacto de Facebook indicado por el cliente.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Comparte datos del evento</h3>
+            <p>Indica fecha, tipo de evento y lo que necesitas transmitir para recibir orientacion.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Confirma la transmision</h3>
+            <p>Una vez definidos los detalles reales, el cliente podra confirmar alcance y condiciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+          <div class="reveal">
+            <div class="label">Propuesta de marca</div>
+            <h2 class="section-title" id="prod-heading">
+              Una presencia digital sobria<br>
+              <span class="gold">para una senal confiable</span>
+            </h2>
+            <p class="producto-lead">
+              La pagina usa el sello de Partido Higuerillas como elemento central y organiza la informacion disponible para que cualquier visitante encuentre rapido como preguntar por una transmision.
+            </p>
+
+            <ul class="feature-rows" aria-label="Datos confirmados y pendientes">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-tower-broadcast"></i></div>
+                <div>
+                  <h4>Servicio confirmado</h4>
+                  <p>Transmision en vivo de eventos.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-brands fa-facebook-f"></i></div>
+                <div>
+                  <h4>Contacto en Facebook</h4>
+                  <p>Aurelio Cruz, segun la informacion entregada por el cliente.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4>Telefono</h4>
+                  <p><a href="tel:+522411127553">241 112 7553</a></p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-circle-info"></i></div>
+                <div>
+                  <h4>Campos pendientes</h4>
+                  <p>Direccion, horarios, paquetes y fotos reales aun no fueron proporcionados.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Resumen de informacion disponible">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">1</span>
+                <span class="spec-name">Servicio</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">2</span>
+                <span class="spec-name">Canales</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">0</span>
+                <span class="spec-name">Direccion</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">0</span>
+                <span class="spec-name">Horarios</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="brand-medallion" role="img" aria-label="Emblema circular de Partido Higuerillas">
+                <img src="imagenes/partido-higuerillas-logo.png" alt="">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                En vivo
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-signal" style="color:var(--gold);"></i>
+                Marca premium
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" aria-label="Numeros clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="1" data-suffix="" aria-label="1 servicio confirmado">0</div>
+            <div class="stat-lbl">Servicio<br>confirmado</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="2" data-suffix="" aria-label="2 canales de contacto">0</div>
+            <div class="stat-lbl">Canales<br>de contacto</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="0" data-suffix="" aria-label="0 direcciones confirmadas">0</div>
+            <div class="stat-lbl">Direcciones<br>confirmadas</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="0" data-suffix="" aria-label="0 horarios confirmados">0</div>
+            <div class="stat-lbl">Horarios<br>confirmados</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectores" aria-labelledby="sec-heading">
+      <canvas class="section-particles" data-particles="gold" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="sectores-hdr reveal">
+          <div class="label">Galeria</div>
+          <h2 class="section-title" id="sec-heading">
+            Trabajos reales <span class="gold">pendientes de cargar</span>
+          </h2>
+          <p>El brief indica que no existen fotos adicionales. Estos espacios estan listos para sustituirse por material real cuando el cliente lo entregue.</p>
+        </div>
+
+        <div class="sectores-grid gallery-grid" role="list">
+          <div class="sector-card gallery-card reveal" role="listitem">
+            <i class="fa-solid fa-image sector-icon" aria-hidden="true"></i>
+            <h3>Evento real 01</h3>
+            <p>Foto y descripcion pendientes de confirmar.</p>
+          </div>
+          <div class="sector-card gallery-card reveal d1" role="listitem">
+            <i class="fa-solid fa-image sector-icon" aria-hidden="true"></i>
+            <h3>Evento real 02</h3>
+            <p>Foto y descripcion pendientes de confirmar.</p>
+          </div>
+          <div class="sector-card gallery-card reveal d2" role="listitem">
+            <i class="fa-solid fa-star-half-stroke sector-icon" aria-hidden="true"></i>
+            <h3>Opiniones</h3>
+            <p>Resenas de clientes pendientes. No se agregan testimonios falsos.</p>
+          </div>
+          <div class="sector-card gallery-card reveal d3" role="listitem">
+            <i class="fa-brands fa-facebook-f sector-icon" aria-hidden="true"></i>
+            <h3>Facebook</h3>
+            <p>Contacto disponible: Aurelio Cruz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="contact-heading">
+      <canvas class="section-particles" data-particles="silver" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Cotiza tu <span class="gold">transmision en vivo</span>
+          </h2>
+          <p>El formulario abre WhatsApp con el mensaje ya escrito para continuar la conversacion sin friccion.</p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div class="contact-info">
+            <h3>Atencion directa</h3>
+            <p class="ci-sub">Partido Higuerillas - transmision de eventos en vivo.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="ci-body">
+                  <h4>Direccion</h4>
+                  <p>Pendiente de confirmar por el cliente.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+                <div class="ci-body">
+                  <h4>Horarios</h4>
+                  <p>Pendiente de confirmar por el cliente.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                <div class="ci-body">
+                  <h4>Telefono</h4>
+                  <p><a href="tel:+522411127553">241 112 7553</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="ci-body">
+                  <h4>Facebook</h4>
+                  <p>Aurelio Cruz</p>
+                  <a href="https://www.facebook.com/search/top?q=Aurelio%20Cruz" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Buscar en Facebook
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="map-placeholder" role="img" aria-label="Mapa pendiente de direccion confirmada">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>Mapa de Google pendiente de direccion confirmada.</span>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Solicitar informacion</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">Que necesitas</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Transmision en vivo de evento</option>
+                    <option>Informacion general</option>
+                    <option>Confirmar disponibilidad</option>
+                    <option>Enviar fotos o datos del evento</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle del evento</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Cuentanos fecha, tipo de evento y lo que deseas transmitir."></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar se abre WhatsApp con tu mensaje preparado.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="imagenes/partido-higuerillas-logo.png" alt="Logo de Partido Higuerillas">
+            <span>Partido Higuerillas</span>
+          </div>
+          <p class="footer-tagline">Transmision de eventos en vivo con identidad de marca premium.</p>
+        </div>
+        <div class="footer-links" aria-label="Enlaces de pie de pagina">
+          <a href="#why">Elegirnos</a>
+          <a href="#ambientes">Servicios</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#sectores">Galeria</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/search/top?q=Aurelio%20Cruz"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/522411127553?text=Hola%2C%20quiero%20informacion%20sobre%20transmision%20de%20eventos%20en%20vivo%20con%20Partido%20Higuerillas."
+             target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="tel:+522411127553" class="footer-soc" aria-label="Telefono">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Partido Higuerillas. Todos los derechos reservados. Direccion y horarios pendientes de confirmar.
+      </p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/522411127553?text=Hola%2C%20visite%20la%20pagina%20de%20Partido%20Higuerillas%20y%20quiero%20informacion%20sobre%20transmision%20de%20eventos%20en%20vivo."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
